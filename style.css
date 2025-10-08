@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #9A1088;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    gap: 40%;
+    align-items: center;
+}
+
+.title-header{
+    font-size: 24px;
+    font-family: 'Roboto Bold';
+    color: #FFFFFF;
+    text-shadow: #690D5D 0px 4px 4px;
+}
+
+.login a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Roboto Regular';
+    font-size: 20px;
+}
+
+.title-corpo1 {
+    text-align: center;
+    font-size: 12px;
+}
+
+.corpo-1 {
+    margin: 25px;
+}
+
+#slide-1, #slide-2, #slide-3 {
+    width: 100%;
+    height: 300px;
+}
+
+.slider-wraper {
+    position: relative;
+    margin: 0 auto;
+    max-width: 48rem;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slider{
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 0.6rem;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease250ms;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.dot:active, 
+.dot:hover {
+    opacity: 1;
+}
+
+.texto{
+    text-align: justify;
+    margin-top: 30px;
+    line-height: 1.3;
+    margin-bottom: 50px;
+}

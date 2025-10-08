@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>NailArt - Home</title>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1 class="title-header">
+                NailArt
+            </h1>
+        </div>
+        <div class="login">
+            <a href="login.html" class="text-login">
+                Login
+            </a>
+        </div>
+    </header>
+
+    <div class="corpo-1">
+        <div class="title-corpo1">
+            <h1>
+                Realce sua beleza até a ponta dos dedos
+            </h1>
+        </div>
+        <section class="conteiner">
+            <div class="slider-wraper">
+                <div class="slider">
+                    <img id="slide-1" src="./assets/Foto-1.jpg">
+                    <img id="slide-2" src="./assets/Foto-2.jpeg">
+                    <img id="slide-3" src="./assets/Foto-3.webp">
+                </div>
+                <div class="slider-nav">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </section>
+        <div class="texto">
+            <p>
+                No nosso espaço, cada detalhe importa — e as unhas são parte essencial da sua identidade. 
+                Trabalhamos com técnicas modernas, produtos de alta qualidade e profissionais apaixonadas pelo que fazem, 
+                para garantir que suas unhas estejam sempre impecáveis, saudáveis e cheias de estilo.
+            </p>
+
+            <p>
+                Quer unhas que combinam com você? Agende agora mesmo e descubra como pequenos detalhes fazem uma grande diferença.
+            </p>
+        </div>
+    </div>
+
+    <div class="promo">
+        <h2 class="h2-title">Promoções da semana</h2>
+    </div>
+
+    <script>
+        const slider = document.querySelector('.slider');
+        const slides = slider.querySelectorAll('img');
+        const bolinhas = document.querySelectorAll('.bolinha');
+        let index = 0;
+
+        function mudarSlide() {
+            index = (index + 1) % slides.length; 
+            slider.style.transform = `translateX(${-index * 100}%)`;
+            atualizarDots();
+
+            function atualizarDots() {
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle('active', i === index);
+                });
+            }
+
+            dots.forEach((dot, i) => {
+                dot.addEventListener('click', () => {
+                    index = i;
+                    slider.style.transform = `translateX(${-index * 100}%)`;
+                    atualizarDots();
+                });
+            });
+        }
+
+        setInterval(mudarSlide, 3600);
+    </script>
+
+</body>
+</html>

@@ -271,3 +271,48 @@ header {
     font-weight: normal;
     text-align: center;
 }
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.escolha, .sim-nao, .selecao, .add-img, .sn {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+#livre {
+    width: 70%;
+    height: 90px;
+}
+
+.final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+#h1-a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 24px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.sn {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    
+}

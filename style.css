@@ -341,7 +341,27 @@ h1, h2, h3, p, a {
     width: 90px;
     height: 40px;
     font-weight: bold;
+    color: black;
 }
+
+/* #botao-roxo {
+  background-color: white;
+  color: #9A1088;
+  border: 2px solid #9A1088;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#botao-roxo:hover {
+  background-color: #e8c7e6;
+}
+
+#botao-roxo:active {
+  transform: scale(0.97);
+} */
 
 #padrao {
     font-size: 20px;
@@ -361,11 +381,13 @@ h1, h2, h3, p, a {
 }
 
 #sino {
-    border-radius: 10px;
-    width: 15px;
-    height: 15px;
-    border: 1px solid #9A1088;
-    background-color: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #9A1088;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 #btn-menu {
@@ -397,10 +419,178 @@ h1, h2, h3, p, a {
 .botoes1 {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .bloco {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+}
+
+#livre {
+    margin-top: 10px;
+    width: 70%;
+    height: 99px;
+    border-radius: 5px;
+    border: 1px solid #8c8c8c;
+    color:#8c8c8c;
+    background-color: #F6F6F6;
+}
+
+#btn-menu2 {
+    margin-top: 5px;
+    width: 80%;
+    height: 27px;
+    border-radius: 5px;
+    border: 1px solid #8c8c8c;
+    box-shadow: #8c8c8c3f 0px 4px 4px;
+    color:#8c8c8c;
+    background-color: #F6F6F6;
+}
+
+.escondido {
+    display: none;
+}
+
+.sn2 {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#enviar {
+    margin-top: 5px;
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #2EBF11;
+    box-shadow: #8c8c8c3f 0px 4px 4px;
+    color:#ffffff;
+    background-color: #37EA26;
+}
+
+.final {
+    padding-bottom: 40px;
+}
+
+/* chaat */
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  background: #f4f4f4;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+ul li:hover {
+  background: #e3e3e3;
+}
+
+
+
+
+
+/* #############################################################################################3 */
+#tela-confirmacao, #tela-sucesso {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.3); /* fundo transparente */
+  backdrop-filter: blur(6px); /* leve desfoque de fundo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Caixa central (popup) */
+.popup {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 35px;
+  border-radius: 20px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.popup h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Botões de confirmação */
+.botoes-popup {
+  display: flex;
+  justify-content: space-around;
+}
+
+.botoes-popup button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Cores específicas */
+#confirmar-sim {
+  background-color: #00C853; /* verde */
+}
+
+#confirmar-nao {
+  background-color: #D50000; /* vermelho */
+}
+
+#confirmar-sim:hover,
+#confirmar-nao:hover,
+#voltar-agenda:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Tela de sucesso */
+#tela-sucesso .popup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#tela-sucesso .popup::before {
+  content: "✔";
+  font-size: 50px;
+  color: #00C853;
+  margin-bottom: 10px;
+}
+
+#tela-sucesso h2 {
+  font-size: 17px;
+  color: #444;
+  margin-top: 10px;
+}
+
+#voltar-agenda {
+  margin-top: 20px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  background-color: #9A1088;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
 }

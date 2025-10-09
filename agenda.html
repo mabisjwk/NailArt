@@ -7,139 +7,164 @@
     <title>Agende agora!</title>
 </head>
 <body>
-    <header>
-        <div class="title">
-            <h1 class="title-header">
-                NailArt
-            </h1>
-        </div>
-        <div class="login">
-            <a href="index.html" class="text-login">
-                Sair
-            </a>
-        </div>
-    </header>
-
-    <div class="escolha">
-        <h1 id="h1-a">Escolha o serviço que mais se adapta a você:</h1>
-        <div class="botoes">
-            <button id="botao-roxo">Manicure</button>
-            <button id="botao-roxo">Pedicure</button>
-            <button id="botao-roxo">Ambos</button>
-        </div>
-    </div>
-
-    <div class="sim-nao">
-        <h2 id="padrao">Vai querer tratamento especial?</h2>
-        <h3 id="padrao-pequeno">(lavagem com esfoliação, hidratação e remoção de cutícula)</h3>
-        <div class="sn">
-            <div class="sla">
-                <button id="sino"></button><p id="aaa">Sim</p>
+    <div id="tela-agendamento">
+        <header>
+            <div class="title">
+                <h1 class="title-header">
+                    NailArt
+                </h1>
             </div>
-            <div class="sla">
-                <button id="sino"></button><p id="aaa">Não</p>
+            <div class="login">
+                <a href="index.html" class="text-login">
+                    Sair
+                </a>
+            </div>
+        </header>
+
+        <div class="escolha">
+            <h1 id="h1-a">Escolha o serviço que mais se adapta a você:</h1>
+            <div class="botoes">
+                <button id="botao-roxo">Manicure</button>
+                <button id="botao-roxo">Pedicure</button>
+                <button id="botao-roxo">Ambos</button>
             </div>
         </div>
-    </div>
 
-    <div class="selecao">
-        <h2 id="padrao">Que tipo de esmaltação você deseja?</h2>
-        <h3 id="padrao-pequeno">(Normal ou em gel)</h3>
-        <button id="btn-menu">Selecionar ▼</button>
-        <ul id="lista" class="escondido">
-            <li>Normal</li>
-            <li>Gel</li>
-        </ul>
-    </div>
-
-    <div class="selecao">
-        <h2 id="padrao">Qual formato de unha você deseja?</h2>
-        <h3 id="padrao-pequeno">(Redonda, oval, quadrada, squoval, stiletto, amendoada, bailarina, lipstick )</h3>
-        <button id="btn-menu">Selecionar ▼</button>
-        <ul id="lista" class="escondido">
-            <li>Redonda</li>
-            <li>Oval</li>
-            <li>Quadrada</li>
-            <li>Squoval</li>
-            <li>Stiletto</li>
-            <li>Amendoada</li>
-            <li>Bailarina</li>
-            <li>lipstick</li>
-        </ul>
-    </div>
-
-    <div class="sim-nao">
-        <h2 id="padrao">Deseja estilizar com gel ou acrílico?</h2>
-        <div class="sn2">
-            <div class="sla">
-                <button id="sino"></button><p id="aaa">Sim</p>
+        <div class="sim-nao">
+            <h2 id="padrao">Vai querer tratamento especial?</h2>
+            <h3 id="padrao-pequeno">(lavagem com esfoliação, hidratação e remoção de cutícula)</h3>
+            <div class="sn">
+                <div class="sla">
+                    <button id="sino"></button><p id="aaa">Sim</p>
+                </div>
+                <div class="sla">
+                    <button id="sino"></button><p id="aaa">Não</p>
+                </div>
             </div>
+        </div>
+
+        <div class="selecao">
+            <h2 id="padrao">Que tipo de esmaltação você deseja?</h2>
+            <h3 id="padrao-pequeno">(Normal ou em gel)</h3>
+            <button id="btn-menu">Selecionar ▼</button>
             <ul id="lista" class="escondido">
-                <input class="" type="text" placeholder="Qual?" id="lname" name="lname"><br>
+                <li>Normal</li>
+                <li>Gel</li>
             </ul>
-            <div class="sla">
-                <button id="sino"></button><p id="aaa">Não</p>
-            </div>
         </div>
-    </div>
 
-    <div class="sim-nao">
-        <h2 id="padrao">Qual cor você gostaria de usar?</h2>
-        <h3 id="padrao-pequeno">Não precisa ser específica, é apenas para reunir as opções de cores mais próximas a escolhida.</h3>
-        <input id="cor-esmalte" type="text" id="lname" name="lname" placeholder="Digite a cor que deseja..."><br>
-    </div>
-
-    <div class="add-img">
-        <h2 id="padrao">Insira uma imagem de exemplo do que deseja(opcional):</h2>
-        <input type="file" id="imagens" name="imagens" accept="image/*" multiple>
-    </div>
-
-    <div class="escolha">
-        <h1 id="h1-a">Escolha o dia e horário que mais se encaixa com você:</h1>
-        <div class="botoes1">
-            <div class="bloco">
-                <button id="btn-menu">Dia da semana</button>
-                <ul id="lista" class="escondido">
-                    <li>Segunda-Feira</li>
-                    <li>Terça-Feira</li>
-                    <li>Quarta-Feira</li>
-                    <li>Quinta-Feira</li>
-                    <li>Sexta-Feira</li>
-                </ul>
-            </div>
-
-            <div class="bloco">
-                <button id="btn-menu">Horário</button>
-                <ul id="lista" class="escondido">
-                    <li>07h00 - 8h30</li>
-                    <li>8h30 - 10h00</li>
-                    <li>10h00 - 11h00</li>
-                    <li>13h00 - 15h00</li>
-                    <li>15h00 - 16h30</li>
-                    <li>16h30 - 18h00</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="sim-nao">
-        <h2 id="padrao">Deseja atendimento com alguém específico?</h2>
-        <div class="sn2">
-            <div class="sla">
-                <button id="sino"></button><p id="aaa">Sim</p>
-            </div>
+        <div class="selecao">
+            <h2 id="padrao">Qual formato de unha você deseja?</h2>
+            <h3 id="padrao-pequeno">(Redonda, oval, quadrada, squoval, stiletto, amendoada, bailarina, lipstick )</h3>
+            <button id="btn-menu">Selecionar ▼</button>
             <ul id="lista" class="escondido">
-                <input class="" type="text" placeholder="Qual atendente?" id="lname" name="lname"><br>
+                <li>Redonda</li>
+                <li>Oval</li>
+                <li>Quadrada</li>
+                <li>Squoval</li>
+                <li>Stiletto</li>
+                <li>Amendoada</li>
+                <li>Bailarina</li>
+                <li>lipstick</li>
             </ul>
-            <div class="sla">
-                <button id="sino"></button><p id="aaa">Não</p>
+        </div>
+
+        <div class="sim-nao">
+            <h2 id="padrao">Deseja estilizar com gel ou acrílico?</h2>
+            <div class="sn2">
+                <div class="sla">
+                    <button id="sino"></button><p id="aaa">Sim</p>
+                </div>
+                <ul id="lista" class="escondido">
+                    <input class="" type="text" placeholder="Gel ou acrílico?" id="lname" name="lname"><br>
+                </ul>
+                <div class="sla">
+                    <button id="sino"></button><p id="aaa">Não</p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="final">
-        <input id="livre" type="text" placeholder="Espaço livre para objeções..." id="lname" name="lname"><br>
-        <button id="enviar">Confirmar agendamento</button>
-    </div>
+        <div class="sim-nao">
+            <h2 id="padrao">Qual cor você gostaria de usar?</h2>
+            <h3 id="padrao-pequeno">Não precisa ser específica, é apenas para reunir as opções de cores mais próximas a escolhida.</h3>
+            <input id="cor-esmalte" type="text" id="lname" name="lname" placeholder="Digite a cor que deseja..."><br>
+        </div>
+
+        <div class="add-img">
+            <h2 id="padrao">Insira uma imagem de exemplo do que deseja(opcional):</h2>
+            <input type="file" id="imagens" name="imagens" accept="image/*" multiple>
+        </div>
+
+        <div class="escolha">
+            <h1 id="h1-a">Escolha o dia e horário que mais se encaixa com você:</h1>
+            <div class="botoes1">
+                <div class="bloco">
+                    <button id="btn-menu2">Dia da semana▼</button>
+                    <ul id="lista" class="escondido">
+                        <li>Segunda-Feira</li>
+                        <li>Terça-Feira</li>
+                        <li>Quarta-Feira</li>
+                        <li>Quinta-Feira</li>
+                        <li>Sexta-Feira</li>
+                    </ul>
+                </div>
+
+                <div class="bloco">
+                    <button id="btn-menu2">Horário▼</button>
+                    <ul id="lista" class="escondido">
+                        <li>07h00 - 8h30</li>
+                        <li>8h30 - 10h00</li>
+                        <li>10h00 - 11h00</li>
+                        <li>13h00 - 15h00</li>
+                        <li>15h00 - 16h30</li>
+                        <li>16h30 - 18h00</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="sim-nao">
+            <h2 id="padrao">Deseja atendimento com alguém específico?</h2>
+            <div class="sn2">
+                <div class="sla">
+                    <button id="sino"></button><p id="aaa">Sim</p>
+                </div>
+                <ul id="lista" class="escondido">
+                    <input class="" type="text" placeholder="Qual atendente?" id="lname" name="lname"><br>
+                </ul>
+                <div class="sla">
+                    <button id="sino"></button><p id="aaa">Não</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="final">
+            <input id="livre" type="text" placeholder="Espaço livre para objeções..." id="lname" name="lname"><br>
+            <button id="enviar">Confirmar agendamento</button>
+        </div>
+        </div>
+
+                <!-- TELA DE CONFIRMAÇÃO -->
+        <div id="tela-confirmacao" style="display: none;">
+        <div class="popup">
+            <h2>Confirmar agendamento?</h2>
+            <div class="botoes-popup">
+            <button id="confirmar-sim">Sim</button>
+            <button id="confirmar-nao">Não</button>
+            </div>
+        </div>
+        </div>
+
+        <!-- TELA DE SUCESSO -->
+        <div id="tela-sucesso" style="display: none;">
+        <div class="popup">
+            <h2>✅ Agendamento confirmado com sucesso!</h2>
+            <button id="voltar-agenda">Voltar</button>
+        </div>
+        </div>
+
+    </body>
+
+    <script src="./script.js"></script>
 </body>
 </html>

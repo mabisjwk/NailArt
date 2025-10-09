@@ -33,15 +33,19 @@
         <h2 id="padrao">Vai querer tratamento especial?</h2>
         <h3 id="padrao-pequeno">(lavagem com esfoliação, hidratação e remoção de cutícula)</h3>
         <div class="sn">
-            <button id="sino">Sim</button>
-            <button id="sino">Não</button>
+            <div class="sla">
+                <button id="sino"></button><p id="aaa">Sim</p>
+            </div>
+            <div class="sla">
+                <button id="sino"></button><p id="aaa">Não</p>
+            </div>
         </div>
     </div>
 
     <div class="selecao">
         <h2 id="padrao">Que tipo de esmaltação você deseja?</h2>
         <h3 id="padrao-pequeno">(Normal ou em gel)</h3>
-        <button id="btn-menu">Escolher ▼</button>
+        <button id="btn-menu">Selecionar ▼</button>
         <ul id="lista" class="escondido">
             <li>Normal</li>
             <li>Gel</li>
@@ -51,7 +55,7 @@
     <div class="selecao">
         <h2 id="padrao">Qual formato de unha você deseja?</h2>
         <h3 id="padrao-pequeno">(Redonda, oval, quadrada, squoval, stiletto, amendoada, bailarina, lipstick )</h3>
-        <button id="btn-menu">Escolher ▼</button>
+        <button id="btn-menu">Selecionar ▼</button>
         <ul id="lista" class="escondido">
             <li>Redonda</li>
             <li>Oval</li>
@@ -66,19 +70,23 @@
 
     <div class="sim-nao">
         <h2 id="padrao">Deseja estilizar com gel ou acrílico?</h2>
-        <div class="sn">
-            <button id="sino">Sim</button>
+        <div class="sn2">
+            <div class="sla">
+                <button id="sino"></button><p id="aaa">Sim</p>
+            </div>
             <ul id="lista" class="escondido">
                 <input class="" type="text" placeholder="Qual?" id="lname" name="lname"><br>
             </ul>
-            <button id="sino">Não</button>
+            <div class="sla">
+                <button id="sino"></button><p id="aaa">Não</p>
+            </div>
         </div>
     </div>
 
     <div class="sim-nao">
         <h2 id="padrao">Qual cor você gostaria de usar?</h2>
         <h3 id="padrao-pequeno">Não precisa ser específica, é apenas para reunir as opções de cores mais próximas a escolhida.</h3>
-        <input type="text" id="lname" name="lname"><br>
+        <input id="cor-esmalte" type="text" id="lname" name="lname" placeholder="Digite a cor que deseja..."><br>
     </div>
 
     <div class="add-img">
@@ -89,34 +97,43 @@
     <div class="escolha">
         <h1 id="h1-a">Escolha o dia e horário que mais se encaixa com você:</h1>
         <div class="botoes1">
-            <button id="btn-menu">Dia da semana</button>
-            <ul id="lista" class="escondido">
-                <li>Segunda-Feira</li>
-                <li>Terça-Feira</li>
-                <li>Quarta-Feira</li>
-                <li>Quinta-Feira</li>
-                <li>Sexta-Feira</li>
-            </ul>
-            <button id="btn-menu">Horário</button>
-            <ul id="lista" class="escondido">
-                <li>07h00 - 8h30</li>
-                <li>8h30 - 10h00</li>
-                <li>10h00 - 11h00</li>
-                <li>13h00 - 15h00</li>
-                <li>15h00 - 16h30</li>
-                <li>16h30 - 18h00</li>
-            </ul>
+            <div class="bloco">
+                <button id="btn-menu">Dia da semana</button>
+                <ul id="lista" class="escondido">
+                    <li>Segunda-Feira</li>
+                    <li>Terça-Feira</li>
+                    <li>Quarta-Feira</li>
+                    <li>Quinta-Feira</li>
+                    <li>Sexta-Feira</li>
+                </ul>
+            </div>
+
+            <div class="bloco">
+                <button id="btn-menu">Horário</button>
+                <ul id="lista" class="escondido">
+                    <li>07h00 - 8h30</li>
+                    <li>8h30 - 10h00</li>
+                    <li>10h00 - 11h00</li>
+                    <li>13h00 - 15h00</li>
+                    <li>15h00 - 16h30</li>
+                    <li>16h30 - 18h00</li>
+                </ul>
+            </div>
         </div>
     </div>
 
     <div class="sim-nao">
         <h2 id="padrao">Deseja atendimento com alguém específico?</h2>
-        <div class="sn">
-            <button id="sino">Sim</button>
+        <div class="sn2">
+            <div class="sla">
+                <button id="sino"></button><p id="aaa">Sim</p>
+            </div>
             <ul id="lista" class="escondido">
-                <input type="text" placeholder="Insira o nome da atendente:" id="lname" name="lname"><br>
+                <input class="" type="text" placeholder="Qual atendente?" id="lname" name="lname"><br>
             </ul>
-            <button id="sino">Não</button>
+            <div class="sla">
+                <button id="sino"></button><p id="aaa">Não</p>
+            </div>
         </div>
     </div>
 

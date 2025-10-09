@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="login.css" />
+  <title>Login - NailArt</title>
+</head>
+<body>
+  <div class="login-container">
+    <h1 class="logo">NailArt</h1>
+    <p class="slogan">Bem-vinda de volta 💅</p>
+
+    <form class="login-form" onsubmit="entrar(event)">
+      <input type="text" placeholder="Usuário ou e-mail" required />
+      <input type="password" placeholder="Senha" required />
+      <button type="submit">Entrar</button>
+    </form>
+    <a style="color: rgb(77, 3, 72); text-decoration: none;" href="./index.html">Voltar</a>
+  </div>
+
+  <script>
+    function entrar(event) {
+      event.preventDefault();
+      window.location.href = "agenda.html"; // ou agendamento.html, dependendo do fluxo
+    }
+  </script>
+</body>
+</html>

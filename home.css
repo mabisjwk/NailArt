@@ -1,0 +1,47 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("assets/flores-roxas-em-um-fundo-escuro_622540-1048.jpg");
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-container {
+  text-align: center;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  width: 70%;
+  max-width: 400px;
+}
+
+.logo {
+  font-size: 40px;
+  color: #35042e;
+  margin-bottom: 10px;
+}
+
+.slogan {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.cta-area button {
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #35042e;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.cta-area button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}

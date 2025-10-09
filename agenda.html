@@ -72,14 +72,16 @@
         <div class="sim-nao">
             <h2 id="padrao">Deseja estilizar com gel ou acrílico?</h2>
             <div class="sn2">
-                <div class="sla">
-                    <button id="sino"></button><p id="aaa">Sim</p>
+                <div class="algo">
+                    <div class="sla">
+                        <button id="sino"></button><p id="aaa">Sim</p>
+                    </div>
+                    <div class="sla">
+                        <button id="sino"></button><p id="aaa">Não</p>
+                    </div>
                 </div>
-                <ul id="lista" class="escondido">
-                    <input class="" type="text" placeholder="Gel ou acrílico?" id="lname" name="lname"><br>
-                </ul>
-                <div class="sla">
-                    <button id="sino"></button><p id="aaa">Não</p>
+                <div id="campo-gel" class="escondido">
+                    <input type="text" placeholder="Gel ou acrílico?" id="atendente-input" name="atendente-input"><br>
                 </div>
             </div>
         </div>
@@ -126,45 +128,51 @@
         <div class="sim-nao">
             <h2 id="padrao">Deseja atendimento com alguém específico?</h2>
             <div class="sn2">
-                <div class="sla">
-                    <button id="sino"></button><p id="aaa">Sim</p>
+                <div class="algo">
+                    <div class="sla">
+                        <button id="sino"></button><p id="aaa">Sim</p>
+                    </div>
+                    <div class="sla">
+                        <button id="sino"></button><p id="aaa">Não</p>
+                    </div>
                 </div>
-                <ul id="lista" class="escondido">
-                    <input class="" type="text" placeholder="Qual atendente?" id="lname" name="lname"><br>
-                </ul>
-                <div class="sla">
-                    <button id="sino"></button><p id="aaa">Não</p>
+                <div id="campo-gel" class="escondido">
+                    <input type="text" placeholder="Qual atendente?" id="atendente-input" name="atendente-input"><br>
                 </div>
             </div>
+        </div>
+
+        <div id="resumo-agendamento" class="escondido">
+            <h2>Resumo do seu agendamento:</h2>
+            <ul id="resumo-lista"></ul>
         </div>
 
         <div class="final">
             <input id="livre" type="text" placeholder="Espaço livre para objeções..." id="lname" name="lname"><br>
             <button id="enviar">Confirmar agendamento</button>
+            <a style="color: rgb(4, 4, 67); text-decoration: none; margin-top: 5px; font-size: 18px;" href="index.html">Sair</a>
         </div>
-        </div>
+    </div>
 
-                <!-- TELA DE CONFIRMAÇÃO -->
-        <div id="tela-confirmacao" style="display: none;">
-        <div class="popup">
-            <h2>Confirmar agendamento?</h2>
-            <div class="botoes-popup">
-            <button id="confirmar-sim">Sim</button>
-            <button id="confirmar-nao">Não</button>
-            </div>
+    <!-- TELA DE CONFIRMAÇÃO -->
+    <div id="tela-confirmacao" style="display: none;">
+    <div class="popup">
+        <h2>Deseja confirmar o agendamento?</h2>
+        <div class="botoes-popup">
+        <button id="confirmar-sim">Sim</button>
+        <button id="confirmar-nao">Não</button>
         </div>
-        </div>
+    </div>
+    </div>
 
-        <!-- TELA DE SUCESSO -->
-        <div id="tela-sucesso" style="display: none;">
-        <div class="popup">
-            <h2>✅ Agendamento confirmado com sucesso!</h2>
-            <button id="voltar-agenda">Voltar</button>
-        </div>
-        </div>
-
+    <!-- TELA DE SUCESSO -->
+    <div id="tela-sucesso" style="display: none;">
+    <div class="popup">
+        <h2>Agendamento confirmado com sucesso!</h2>
+        <button id="voltar-agenda">Voltar</button>
+    </div>
+    </div>
     </body>
 
     <script src="./script.js"></script>
-</body>
 </html>

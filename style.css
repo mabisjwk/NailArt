@@ -6,7 +6,7 @@ body {
 /* #################### inicio ###################### */
 
 header {
-    background-color: #9A1088;
+    background-color: #35042e;
     display: flex;
     width: 100%;
     height: 60px;
@@ -19,7 +19,13 @@ header {
     font-size: 24px;
     font-family: 'Roboto Bold';
     color: #FFFFFF;
-    text-shadow: #690D5D 0px 4px 4px;
+    text-shadow: #ffffff58 0px 4px 4px;
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
 }
 
 .login a {
@@ -33,6 +39,7 @@ header {
     text-align: center;
     font-size: 13px;
     text-shadow: rgba(0, 0, 0, 0.158) 0px 4px 4px;
+    padding-bottom: 10px;
 }
 
 .corpo-1 {
@@ -130,6 +137,7 @@ header {
 .h2-title {
     font-size: 22px;
     text-shadow: rgba(0, 0, 0, 0.158) 0px 4px 4px;
+    padding-bottom: 8px;
 }
 
 #imagem {
@@ -153,7 +161,7 @@ header {
     text-decoration: none;
     font-family: 'arial';
     font-size: 15px;
-    background-color: #9A1088;
+    background-color: #35042e;
     color: white;
     padding: 12px;
     border-radius: 8px;
@@ -168,7 +176,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #610B56;
+    background-color: #35042e;
     gap: 25px;
     padding-top: 30px;
     padding-bottom: 40px;
@@ -221,7 +229,7 @@ header {
     height: 45px;
     border-radius: 50px;
     border: 1px solid #D673C9;
-    
+    object-fit: cover;
 }
 
 /* ################## footer ################# */
@@ -240,6 +248,8 @@ header {
 .footer {
     display: flex;
     justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin: 10px;
 }
 
@@ -336,7 +346,7 @@ h1, h2, h3, p, a {
 
 #botao-roxo {
     background-color: #fff;
-    border: 1px solid #9A1088;
+    border: 1px solid #35042e;
     border-radius: 10px;
     width: 90px;
     height: 40px;
@@ -378,16 +388,37 @@ h1, h2, h3, p, a {
     display: flex;
     flex-direction: row;
     gap: 8px;
+    align-items: center;
 }
 
 #sino {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  border: 1px solid #9A1088;
+  border: 1px solid #35042e;
   background-color: white;
   cursor: pointer;
   transition: background-color 0.3s;
+}
+
+#campo-atendente {
+  display: none; /* O input fica escondido inicialmente */
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+#campo-atendente input {
+  padding: 8px;
+  width: 100%;
+  max-width: 300px; /* Tamanho máximo para o input */
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+/* Quando o campo de input aparece */
+.escondido:checked + #campo-atendente {
+  display: block;
 }
 
 #btn-menu {
@@ -437,6 +468,7 @@ h1, h2, h3, p, a {
     border: 1px solid #8c8c8c;
     color:#8c8c8c;
     background-color: #F6F6F6;
+    justify-content: flex-start;
 }
 
 #btn-menu2 {
@@ -456,10 +488,11 @@ h1, h2, h3, p, a {
 
 .sn2 {
     display: flex;
-    flex-direction: row;
-    gap: 50px;
+    flex-direction: column;
+    gap: 5px;
     padding: 0;
     margin-top: 10px;
+    align-items: center;
 }
 
 #enviar {
@@ -498,6 +531,13 @@ ul li:hover {
   background: #e3e3e3;
 }
 
+.algo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
 
 
 
@@ -506,21 +546,22 @@ ul li:hover {
 #tela-confirmacao, #tela-sucesso {
   position: fixed;
   inset: 0;
-  background-color: rgba(255, 255, 255, 0.3); /* fundo transparente */
-  backdrop-filter: blur(6px); /* leve desfoque de fundo */
+  background-color: rgba(255, 255, 255, 0.05); /* fundo transparente */
+  backdrop-filter: blur(px); /* leve desfoque de fundo */
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 999;
+  z-index: 9999;
 }
 
 /* Caixa central (popup) */
 .popup {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgb(255, 255, 255);
   padding: 35px;
   border-radius: 20px;
   text-align: center;
-  width: 300px;
+  align-items: center;
+  width: 200px;
   box-shadow: 0 0 20px rgba(0,0,0,0.15);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -589,8 +630,18 @@ ul li:hover {
   padding: 10px 25px;
   border: none;
   border-radius: 8px;
-  background-color: #9A1088;
+  background-color: #35042e;
   color: white;
   font-size: 15px;
   cursor: pointer;
+}
+
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+#resumo-agendamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
